@@ -1,0 +1,10 @@
+@bgcolor:transparent;
+@bgtext:#fff;
+.fontblack{color:#333}
+.bg-green{background-color:#5cb85c}
+.bg-black{background-color:#333}
+.bg-theme{background-color:@bgcolor;color:@bgtext}
+.bg-orange{background-color:#ff4a00;color:@bgtext}
+.font-white{color:@bgtext}
+.font-black{.fontblack}
+.navbar-toggle-theme{border:1px solid #009051}
