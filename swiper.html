@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>导航条</title>
+</head>
+<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+<link rel="stylesheet" type="text/css" href="swiper/css/swiper-3.4.0.min.css">
+<link rel="stylesheet" type="text/css" href="swiper/css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/QFrame.css">
+<link rel="stylesheet" type="text/css" href="css/color.css">
+<link rel="shortcut icon" href="img/logo.png">
+<body>
+	<div class="container">
+		<div class="menu"></div>
+		<div class="swiper-container mt10">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide orange-slide"><center>orange-slide</center></div>
+		        <div class="swiper-slide red-slide"><center>red-slide</center></div>
+		        <div class="swiper-slide theme-slide"><center>theme-slide</center></div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		    
+		    <!-- 如果需要导航按钮 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		    
+		    <!-- 如果需要滚动条 -->
+		    <!-- <div class="swiper-scrollbar"></div> -->
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="swiper/js/swiper-3.4.0.jquery.min.js"></script>
+	<script type="text/javascript" src="swiper/js/swiper.animate1.0.2.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">        
+	  	var mySwiper = new Swiper ('.swiper-container', {
+		  	autoplay:1000,	//自动播放
+		  	autoplayStopOnLast : false,	//如果设置为true，当切换到最后一个slide时停止自动切换。（loop模式下无效）。
+		  	initialSlide :1,	//设定初始化时slide的索引,0开始。
+		  	// direction : 'vertical',	//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)。
+		  	// speed:300,	//滑动速度，即slider自动滑动开始到结束的时间（单位ms）。
+	  	})
+  </script>
+</body>
+</html>

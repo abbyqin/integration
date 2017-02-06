@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>表单</title>
+</head>
+<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+<link rel="stylesheet" type="text/css" href="css/QFrame.css">
+<link rel="stylesheet" type="text/css" href="css/color.css">
+<link rel="shortcut icon" href="img/logo.png">
+<body>
+	<div class="container">
+		<div class="menu"></div>
+		<div class="navbarWrap navbar bg-theme mt10">
+			<div class="navbar-header">
+				<a href="javascript:void(0);" class="navbar-toggle iconfont icon-caidan" data-toggle="collapse" data-target=".navbar-collapse">               
+              	</a>
+				<a href="javascript:void(0);" class="navbar-brand">导航</a>
+			</div>
+			<ul class="navbar-nav folding">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0);">组件 <span class="iconfont icon-h5icondown"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="navbar.html">折叠式导航</a></li>
+						<li><a href="button.html">按钮组</a></li>
+						<li><a href="form.html">表单</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0);">插件 <span class="iconfont icon-h5icondown"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="imageSlide.html">图片轮播</a></li>						
+					</ul>
+				</li>
+				<li><a href="">目录</a></li>
+				<li><a href="">附件</a></li>
+			</ul>
+		</div>
+
+		<div class="mt10">
+			<div class="line-title">input</div>
+			<div class="formgroup">
+				<label class="title" for="name">name</label>
+				<input type="text" name="text">
+			</div>
+			<div class="formgroup">
+				<label class="title" for="">password</label>
+				<input type="password" name="password" >
+			</div>
+			<div class="line-title">下拉列表</div>
+			<div class="formgroup">
+				<label class="title" for="">select</label>
+				<select>
+					<option>详细内容1</option>
+					<option>详细内容2</option>
+					<option>详细内容3</option>
+				</select>
+			</div>
+			<div class="line-title">单选框/复选框</div>
+			<div class="formgroup">
+				<label class="title" for="">单选框</label>
+				<span class="radio_box">
+					<input type="radio" name="radio" id="radio_1" checked="checked">
+					<label for="radio_1"></label>
+					<span>选项1</span>
+				</span>
+				<span class="radio_box">
+					<input type="radio" name="radio" id="radio_2">
+					<label for="radio_2"></label>
+					<span>选项1</span>
+				</span>
+				<span class="radio_box">
+					<input type="radio" name="radio" id="radio_3">
+					<label for="radio_3"></label>
+					<span>选项1</span>
+				</span>
+			</div>
+			<div class="formgroup">
+				<label class="title" for="">多选框</label>
+				<span class="check_box">
+					<input type="checkbox" name="checkbox" id="check_1" checked="checked">
+					<label for="check_1"></label>
+					<span>选项1</span>
+				</span>
+				<span class="check_box">
+					<input type="checkbox" name="checkbox" id="check_2" checked="checked">
+					<label for="check_2"></label>
+					<span>选项1</span>
+				</span>
+				<span class="check_box">
+					<input type="checkbox" name="checkbox" id="check_3" checked="checked">
+					<label for="check_3"></label>
+					<span>选项1</span>
+				</span>
+			</div>
+			<div class="line-title">文件选择</div>
+			<div class="formgroup">
+				<label class="title">文件</label>	
+				<input type='text' name='textfield' class='textfield' id="textfield"/>			
+				<div class="fileWrap">					
+					<input type='button' class='btn bg-orange' value='选择文件'/>
+					<input type="file" name="fileField" class="file" onchange="document.getElementById('textfield').value=this.value"/>
+				</div>
+			</div>
+			<div class="line-title">进度条</div>
+
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
