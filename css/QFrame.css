@@ -13,6 +13,9 @@
 .menu{
  background-color: #00b589;
 }
+.overlay + .menu {
+    background-color: transparent;
+}
 .border{
   border:1px solid #ddd;
 }
